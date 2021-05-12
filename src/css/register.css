@@ -1,0 +1,15 @@
+.register-title {
+  font-family: "Poppins", sans-serif;
+  /* margin-top: -50px; */
+}
+
+.login-container h2 {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.mt {
+    /* border: 2px solid red; */
+  margin-top: 0px;
+  margin-bottom: 0px;
+}

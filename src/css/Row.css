@@ -1,0 +1,162 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.row{
+    width: min(70%);
+    margin-inline: auto;
+    margin-top: 50px;
+}
+
+.movie_links {
+width: 100%;
+object-fit: contain;
+
+min-width: 270px;
+transition: transform 400ms;
+margin-right: 12px;
+cursor: pointer;
+}
+
+.movie_linksLarge{
+  max-height: 250px;
+  min-height: 150px;
+  min-width: 175px;
+  max-width: 185px;
+}
+
+.row__poster {
+  width: 100%;
+  object-fit: contain;
+  max-height: 150px;
+  transition: transform 400ms;
+  margin-right: 21px;
+  cursor: pointer;
+}
+
+.row__poster:hover{
+    transform: scale(1.07);
+}
+
+.row__posters{
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+
+.row__posters::-webkit-scrollbar{
+    display: none;
+}
+
+.row__posterLarge{
+    max-height: 250px;
+    max-width: 185px;
+}
+
+.temp101{
+  max-height: 250px;
+  border: 2px solid red;
+}
+
+
+.row__posterLarge:hover{
+    transform: scale(1.09);
+}
+
+/* 
+=========================================================
+    LOADING CSS
+=========================================================
+*/
+
+.loading-Screen-home {
+  position: fixed;
+  background: linear-gradient(
+    90deg,
+    #111 0%,
+    #111 100%
+  );
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: center; 
+   align-items: center;
+}
+
+.loading-letters > span {
+  font-size: 50px;
+  font-family: "Poppins", sans-serif;
+  display: inline-block;
+  animation: flip 2.6s infinite linear;
+  transform-origin: 0 70%;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+
+@keyframes flip {
+  35% {
+    transform: rotateX(360deg);
+  }
+  100% {
+    transform: rotatex(360deg);
+  }
+}
+
+.loading-letters > span:nth-child() {
+  color: white;
+}
+
+.loading-letters > span:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.loading-letters > span:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.loading-letters > span:nth-child(4) {
+  animation-delay: 0.9s;
+}
+
+.loading-letters > span:nth-child(5) {
+  animation-delay: 1.2s;
+}
+
+.loading-letters > span:nth-child(6) {
+  animation-delay: 1.5s;
+}
+
+.loading-letters > span:nth-child(7) {
+  animation-delay: 1.8s;
+}
+
+/* 
+=========================================================
+    END LOADING CSS
+=========================================================
+*/
+
+@media screen and (max-width: 720px) {
+  .row{
+    width: min(100%);
+    margin-inline: auto;
+    padding: 0px 20px;
+}
+}
+
+@media screen and (max-width: 400px) {
+  .loading-letters > span {
+    font-size: 30px;
+  }
+}

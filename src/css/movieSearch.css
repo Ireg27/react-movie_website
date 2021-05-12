@@ -1,0 +1,57 @@
+.movie-search-container {
+  padding-top: 80px;
+  background-color: rgb(17, 17, 17);
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.result-title {
+  padding: 5px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.search-grid {
+  width: min(70%);
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.search_movie_linksLarge {
+  height: 250px;
+  width: 185px;
+  /* border: 2px solid red; */
+  margin: 10px;
+}
+
+.search_row__posterLarge {
+    
+  height: 250px;
+  width: 185px;
+  transition: transform 400ms;
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
+.search_row__posterLarge:hover {
+  transform: scale(1.07);
+}
+
+@media screen and (max-width: 890px) {
+  .search-grid {
+    width: min(100%);
+    padding: 0px 20px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .result-title {
+    padding-top: 40px;
+  }
+}
