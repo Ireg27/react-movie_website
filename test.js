@@ -1,0 +1,1 @@
+console.log(`https://api.themoviedb.org/3/trending/all/week?api_key=b65ed2463d3913e0cc1fbd24d023dad1`);

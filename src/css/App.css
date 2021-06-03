@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: none;
+}
+
+
+.App{
+  background-color: #111;
+  color: white;
+  /* overflow-x: hidden; */
+}
+
+.website__title{
+  text-align: center;
+  font-size: 55px;
+}

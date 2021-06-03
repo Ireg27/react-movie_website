@@ -1,0 +1,51 @@
+.uSettings {
+  margin-top: 80px;
+}
+
+.watchlist_titles {
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: center;
+}
+
+.watchlist_select {
+  cursor: pointer;
+  color: white;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  border-radius: 0.2vw;
+  padding: 0.5rem 2rem;
+  margin-right: 1rem;
+  background-color: rgb(51, 51, 51, 0.5);
+  transition: all ease-in 0.2s;
+  margin-top: 10px;
+  font-size: 28px;
+}
+
+.watchlist_active {
+  color: #000;
+  background-color: #e6e6e6;
+}
+
+.watchlist_content{
+    background-color: white;
+    margin-top: 50px;
+    min-height: 480px;
+}
+
+.watched_container{
+  background-color: white;
+    margin-top: 50px;
+    min-height: 480px;
+}
+
+@media screen and (max-width: 520px){
+  .watchlist_titles{
+    margin-top: 140px;
+  }
+
+  .watchlist_select{
+    font-size: 14px;
+  }
+}

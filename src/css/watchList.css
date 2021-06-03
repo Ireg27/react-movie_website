@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.row_WL{
+    width: min(85%, 100rem);
+    margin-inline: auto;
+    margin-top: 50px;
+}
+
+.movie_links_WL{
+/* width: 100%; */
+object-fit: contain;
+transition: transform 400ms;
+padding: 0;
+cursor: pointer;
+}
+
+.movie_linksLarge_WL{
+    /* border: 2px solid red; */
+  max-height: 240px;
+  min-height: 150px;
+  min-width: 115px;
+  max-width: 175px;
+}
+
+.row__poster_WL {
+  width: 100%;
+  object-fit: contain;
+  max-height: 150px;
+  transition: transform 400ms;
+  margin-inline: auto;
+  cursor: pointer;
+}
+
+.row__poster_WL:hover{
+    transform: scale(1.07);
+}
+
+.row__posters_WL{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  /* overflow-y: hidden;
+  overflow-x: scroll; */
+  /* border: 2px solid red; */
+  padding: 20px;
+}
+
+.row__posters::-webkit-scrollbar{
+    display: none;
+}
+
+.row__posterLarge_WL{
+    max-height: 250px;
+    max-width: 163px;
+}
+
+.temp101{
+  max-height: 250px;
+  border: 2px solid red;
+}
+
+
+.row__posterLarge:hover{
+    transform: scale(1.09);
+}
+
+.hidden_display{
+    display: none;
+}
+
+/* 
+=========================================================
+    END LOADING CSS
+=========================================================
+*/
+
+@media screen and (max-width: 720px) {
+  .row{
+    width: min(100%);
+    margin-inline: auto;
+    padding: 0px 20px;
+}
+}
+
+@media screen and (max-width: 400px) {
+  .loading-letters > span {
+    font-size: 30px;
+  }
+}

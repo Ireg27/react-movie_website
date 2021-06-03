@@ -1,0 +1,80 @@
+.user_settings{
+    padding-top: 80px;
+    /* background-color: white; */
+}
+
+.user_details{
+    /* background-color: white; */
+    margin-top: 10px;
+    min-height: 480px;
+}
+
+.login-form-settings{
+    width: min(50%, 100rem);
+    padding: 0;
+    margin: 0;
+    position: relative;
+    margin-inline: auto;
+    border-radius: 0;
+    height: auto;
+    min-height: 380px;
+    justify-content: flex-start;
+    padding-top: 50px;
+    gap: 20px;
+    background-color: white;
+}
+
+.border{
+    /* border: 2px solid red; */
+    margin: 0;
+    margin-inline: auto;
+    /* padding: 0; */
+}
+
+#changeDetailsBtn, #changePasswordBtn{
+    margin-top: 40px;
+}
+
+#changePasswordBtn{
+    margin-bottom: 100px;
+}
+
+#changeDetailsBtn:hover, #changePasswordBtn:hover{
+ background-color: black;
+}
+
+.user_details_privacy{
+    /* background-color: white; */
+    margin-top: 10px;
+    min-height: 480px;
+}
+
+.deactivate_account{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.d_btn{
+    cursor: pointer;
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 0.2vw;
+    padding: 0.5rem 2rem;
+    margin-right: 1rem;
+    background-color: rgb(255, 14, 14);
+    transition: all ease-in 0.2s;
+    margin-top: 10px;
+}
+
+.d_btn:hover{
+    background-color: rgb(172, 0, 0);
+}
+
+@media screen and (max-width: 1200px) {
+    .login-form-settings{
+        width: min(80%, 100rem);
+    }
+}
